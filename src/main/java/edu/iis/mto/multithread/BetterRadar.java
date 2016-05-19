@@ -19,9 +19,7 @@ public class BetterRadar {
 	private void launchPatriot() {
 		Runnable launchPatriotTask = new Runnable() {
 			public void run() {
-				for (int i = 0; i < 10; i++) {
-					battery.launchPatriot();
-				}
+				battery.launchPatriot();
 			}
 		};
 		executor.execute(launchPatriotTask);
